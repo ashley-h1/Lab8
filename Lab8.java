@@ -5,8 +5,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.BufferedReader;
 import java.text.DecimalFormat;
-//read pay csv, calculate weekly pay with overtime, write the new data into output csv
-//2 decimal places w/ $ and update column headings
+
 public class Lab8{
     public static void main(String[]args) throws IOException{
         
@@ -36,7 +35,7 @@ public class Lab8{
                         writer.write("$" + f.format(weekly));
                     }
                     catch(NumberFormatException e){
-                        //System.out.println("Heading");
+
                     }
                     writer.newLine();
                 }
